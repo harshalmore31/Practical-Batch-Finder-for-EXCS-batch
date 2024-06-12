@@ -35,7 +35,7 @@ body {
 }
 
 .input input[type="text"], .input input[type="number"], .input select {
-    width: ;
+    width: 175px;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -56,9 +56,9 @@ body {
 }
 
 .output {
-    white-space: pre-wrap;
+    width: auto;
     background-color: #e9f5f3;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 6px;
     border: 1px solid #ccc;
 }
