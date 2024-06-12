@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule Finder</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
     <div class="main">
@@ -16,16 +15,34 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo accusantium animi inventore veritatis eius pariatur id, repudiandae molestias architecto dicta perspiciatis quam possimus officiis quaerat quisquam excepturi, illo, eaque obcaecati?</p>
         </div>
         <div class="input">
-            <p>Division : <input type="text" class="ipt" id="division"></p>
-            <p>Roll Number : <input type="number" class="rno" id="rollNo"></p>
-            <p>Subject : <input type="text" class="subj" id="subject"></p>
+            <p>
+                <label for="division">Division:</label>
+                <input type="text" id="division" class="ipt">
+            </p>
+            <p>
+                <label for="rollNo">Roll Number:</label>
+                <input type="number" id="rollNo" class="rno">
+            </p>
+            <p>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" class="subj">
+            </p>
+            <div id="physicsBatchContainer" style="display: none;">
+                <label for="physics_batch">Enter the Physics batch:</label>
+                <select id="physics_batch" name="physics_batch">
+                    <option value="1">ANY-MON</option>
+                    <option value="2">ANY-Thu-9-11</option>
+                    <option value="3">ANY-Thu-4-6</option>
+                    <option value="4">PGH-Tues</option>
+                    <option value="5">PGH-Wed-9-11</option>
+                </select>
+            </div>
             <input type="button" value="Submit" onclick="findSchedule()">
         </div>
         <div class="output">
             <pre id="result"></pre>
         </div>
     </div>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
