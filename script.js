@@ -157,3 +157,7 @@ function findSchedule() {
         display("Invalid Division");
     }
 }
+
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+injectSpeedInsights();
